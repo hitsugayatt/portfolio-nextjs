@@ -48,7 +48,7 @@ const Hero = () => {
             </div>
         </div>
         <div className='text-white text-center mt-10'>
-            <h1 className='font-bold text-6xl '>Hello, I'm Pritish Jadon</h1>
+            <h1 className='font-bold text-6xl '>Hello, I&apos;m Pritish Jadon</h1>
             <h2 className='font-serif mt-3 text-4xl text-gray-400 animate-pulse duration-500'>Building digital experiences with code.</h2>
         </div>
         <motion.div

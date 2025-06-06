@@ -16,7 +16,7 @@ const ContactMe = () => {
       <div>
         <p className="text-center text-white/80 mt-5 text-xl">
           Got an idea, question, or collaboration in mind?<br />
-          I'm just a click away — let&#39;s build something amazing together!
+          I&apos;m just a click away — let&#39;s build something amazing together!
         </p>
         <div className='flex flex-col items-center justify-center gap-4 mt-10 w-full'>
         {[
