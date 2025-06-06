@@ -3,7 +3,6 @@ import React from 'react'
 
 import { Home, Menu, User, FileText, Github, Linkedin, ImageIcon } from "lucide-react";
 import Image from 'next/image';
-import { motion } from 'framer-motion'
 import { BsTwitterX } from "react-icons/bs";
 import { useRouter } from 'next/navigation';
 
@@ -11,7 +10,7 @@ const Hero = () => {
   const router = useRouter();
   return (
     <div className= 'min-h-screen'>
-        <div className="fixed backdrop-blur-md top-4 left-1/2 transform -translate-x-1/2 z-50 bg-neutral-900/60 py-3 text-white px-2 md:px-4 lg:px-6 rounded-2xl flex items-center gap-2 border border-neutral-600 w-fit lg:gap-3 lg:min-w-2xl justify-center">
+        <div className="fixed backdrop-blur-md top-4 left-1/2 transform -translate-x-1/2 z-50 bg-neutral-900/60 py-3 text-white mx-2 md:px-4 lg:px-6 rounded-2xl flex items-center md:gap-2 border border-neutral-600 w-fit lg:gap-3 lg:min-w-2xl justify-center">
         <button onClick={()=>router.push('/')} className="transition-all duration-300 ease-in-out px-2 hover:px-5 hover:cursor-pointer hover:text-yellow-500 hover:scale-110">
           <Home/>
         </button>
@@ -51,10 +50,7 @@ const Hero = () => {
             <h1 className='font-bold text-6xl '>Hello, I&apos;m Pritish Jadon</h1>
             <h2 className='font-serif mt-3 text-4xl text-gray-400 animate-pulse duration-500'>Building digital experiences with code.</h2>
         </div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 0.8 }}
+        <div
           className="flex flex-col md:flex-row gap-10 justify-center mt-10 text-center px-10 md:px-5"
         >
           <a href="#projects" className="moving-border-btn">
@@ -67,7 +63,7 @@ const Hero = () => {
             <span className="border-right"></span>
             <span className="relative z-10">Get In Touch</span>
           </a>
-        </motion.div>
+        </div>
     </div>
   );
 };
