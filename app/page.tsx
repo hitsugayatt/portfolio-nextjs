@@ -1,6 +1,9 @@
 import About from "@/components/About";
+import ContactMe from "@/components/ContactMe";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import ProofOfWork from "@/components/ProofOfWork";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -10,6 +13,9 @@ export default function Home() {
           <Hero />
           <About />
           <ProofOfWork />
+          <Skills />
+          <ContactMe />
+          <Footer />
         </div>
         
       </div>

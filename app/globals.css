@@ -97,6 +97,10 @@
   animation: move-left 3s linear infinite;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .moving-border-btn .border-right {
   position: absolute;
   bottom: -100%;
